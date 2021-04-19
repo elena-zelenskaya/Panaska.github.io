@@ -1,85 +1,174 @@
 <div class="container" ng-controller="PortfolioController">
+	<div class="row row-content">
+		<!-- <p style="font-size:1.4em;font-family: 'Josefin Sans', sans-serif;"><i class="fa fa-arrow-left"></i>  -->
+		<!-- <a ui-sref="app">Go Back</a> -->
+		<!-- </p>    -->
 
-            <div class="row row-content">
-             <!-- <p style="font-size:1.4em;font-family: 'Josefin Sans', sans-serif;"><i class="fa fa-arrow-left"></i>  -->
-          <!-- <a ui-sref="app">Go Back</a> -->
-      <!-- </p>    -->
+		<div class="col-xs-12">
+			<h1>Portfolio</h1>
 
-	  <div class="col-xs-12">
+			<div
+				class="panel-group"
+				id="accordion"
+				role="tablist"
+				aria-multiselectable="true"
+			>
+				<div class="panel panel-default">
+					<div class="color_3" role="tab" id="headingOne">
+						<h4
+							class="panel-title"
+							role="button"
+							data-toggle="collapse"
+							data-parent="#accordion"
+							href="#collapseOne"
+							aria-expanded="true"
+							aria-controls="collapseOne"
+						>
+							<i class="fa fa-lg fa-caret-right pull-left"></i>
+							My Little Projects
+						</h4>
+					</div>
 
-	  <h1>Portfolio</h1>
+					<div
+						id="collapseOne"
+						class="panel-collapse collapse"
+						role="tabpanel"
+						aria-labelledby="headingOne"
+					>
+						<div class="panel-body">
+							<div class="well">
+								<p class="important_things">
+									<li>
+										<a
+											target="_blank"
+											href="https://panaska.github.io/GuessTheColorGame"
+											>Guess The Color Game</a
+										>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://panaska.github.io/MatchingGame"
+											>Matching Game</a
+										>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://panaska.github.io/ColorStripes"
+											>Color Stripes</a
+										>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://panaska.github.io/conFusion"
+											>Ristorante con Fusion</a
+										>
+									</li>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="panel panel-default">
+					<div class="color_3" role="tab" id="headingTwo">
+						<h4
+							class="panel-title"
+							role="button"
+							data-toggle="collapse"
+							data-parent="#accordion"
+							href="#collapseTwo"
+							aria-expanded="true"
+							aria-controls="collapseTwo"
+						>
+							<i class="fa fa-lg fa-caret-right pull-left"></i>
+							My Work
+						</h4>
+					</div>
 
-	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
-      <div class="color_3" role="tab" id="headingOne">		<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         <i class="fa fa-lg fa-caret-right pull-left"></i>
-            My Little Projects
-        </h4>
-      </div>
+					<div
+						id="collapseTwo"
+						class="panel-collapse collapse"
+						role="tabpanel"
+						aria-labelledby="headingTwo"
+					>
+						<div class="panel-body">
+							<div class="well">
+								<p class="important_things">
+									Some individual objects I made for school
+									courses on my last job:
+									<a
+										href="web_objects/examples_grid.html"
+										target="_blank"
+										>HERE</a
+									>
+									<!-- <br> -->
+									<!-- <a href="web_objects\examples_grid_ajax.html" target="_blank">HERE</a><br> -->
+									<!-- <a href="web_objects\demo_ajax.html" target="_blank">Test</a> -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-      <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
-    <div class="well">
-    <p class="important_things">
-    <li><a target="_blank" href="https://panaska.github.io/GuessTheColorGame">Guess The Color Game</a></li>
-    <li><a target="_blank" href="https://panaska.github.io/MatchingGame">Matching Game</a></li>
-    <li><a target="_blank" href="https://panaska.github.io/ColorStripes">Color Stripes</a></li>
-    <li><a target="_blank" href="https://panaska.github.io/conFusion">Ristorante con Fusion</a></li>
+				<div class="panel panel-default">
+					<div class="color_3" role="tab" id="headingThree">
+						<h4
+							class="panel-title"
+							role="button"
+							data-toggle="collapse"
+							data-parent="#accordion"
+							href="#collapseThree"
+							aria-expanded="true"
+							aria-controls="collapseThree"
+						>
+							<i class="fa fa-lg fa-caret-right pull-left"></i>
+							My Web Sites
+						</h4>
+					</div>
 
-    </p>
+					<div
+						id="collapseThree"
+						class="panel-collapse collapse"
+						role="tabpanel"
+						aria-labelledby="headingThree"
+					>
+						<div class="panel-body">
+							<div class="well">
+								<p class="important_things">
+									Examples of the web sites I made using CMS
+									WordPress:
+								</p>
+								<!-- Sorry, Russian language inside. -->
 
-    </div>
-    </div>
-    </div>
-      </div>
+								<div class="picture_grid">
+									<div ng-repeat="site in mysites">
+										<div class="picture_name">
+											<a
+												target="_blank"
+												ng-href="{{site.url}}"
+												><img
+													ng-src="{{site.picture}}" /></a
+											><span class="grey_info big_size"
+												><a
+													target="_blank"
+													ng-href="{{site.url}}"
+													>{{site.address}}</a
+												>
+												<br />
+												{{site.name}}</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-  <div class="panel panel-default">
-    <div class="color_3" role="tab" id="headingTwo">		<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-       <i class="fa fa-lg fa-caret-right pull-left"></i>
-          My Work
-      </h4>
-    </div>
-
-		<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-  <div class="well">
-  <p class="important_things">Some individual objects I made for school courses on my last job: <a href="web_objects/examples_grid.html" target="_blank">HERE</a>
-  <!-- <br> -->
-  <!-- <a href="web_objects\examples_grid_ajax.html" target="_blank">HERE</a><br> -->
-  <!-- <a href="web_objects\demo_ajax.html" target="_blank">Test</a> -->
-
-  </p>
-
-  </div>
-</div>
-</div>
-		</div>
-
-		<div class="panel panel-default">
-    <div class="color_3" role="tab" id="headingThree">		<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-       <i class="fa fa-lg fa-caret-right pull-left"></i>
-          My Web Sites
-      </h4>
-    </div>
-
-		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-  <div class="well">
-   <p class="important_things">Examples of the web sites I made using CMS WordPress:</p>
-   <!-- Sorry, Russian language inside. -->
-
-   <div class="picture_grid">
-   <div ng-repeat="site in mysites">
-   <div class="picture_name"><a target="_blank" ng-href="{{site.url}}"><img ng-src={{site.picture}}></a><span class="grey_info big_size"><a target="_blank" ng-href="{{site.url}}">{{site.address}}</a> <br> {{site.name}}</span></div>
-   </div>
-   </div>
-  </div>
-</div>
-</div>
-		</div>
-
-	<!--	<div class="panel panel-default">
+				<!--	<div class="panel panel-default">
     <div class="panel-heading color_3" role="tab" id="headin3">		<h4 class="panel-title" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
    <i class="fa fa-lg fa-caret-right pull-left"></i>
           My Scripts
@@ -95,13 +184,7 @@
 </div>
 </div>
 		</div> -->
-
-
-
+			</div>
 		</div>
-
-
-
-           </div>
-           </div>
-           </div>
+	</div>
+</div>
