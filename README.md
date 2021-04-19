@@ -1,2 +1,2 @@
-# Panaska.github.io
+# elena-zelenskaya.github.io
 Resume &amp; Portfolio
