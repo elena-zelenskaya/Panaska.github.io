@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" ng-app="proApp">
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Resume and Portfolio</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="Succulent Web Store App" />
-		<meta name="title" property="og:title" content="Easy Bay" />
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xml:lang="en"
+	lang="en"
+	ng-app="proApp"
+>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>My Resume and Portfolio</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="My Resume and Portfolio" />
+		<meta
+			name="title"
+			property="og:title"
+			content="My Resume and Portfolio"
+		/>
 		<meta property="og:type" content="Website" />
 		<meta
 			name="image"
@@ -16,46 +25,54 @@
 		<meta
 			name="description"
 			property="og:description"
-			content="Succulent Web Store App"
+			content="My Resume and Portfolio"
 		/>
 		<meta name="author" content="Elena Zelenskaya" />
-	
-	<!-- build:css styles/main.css -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-	
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	
-    <link href="styles/mystyles.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Encode+Sans+Expanded" rel="stylesheet">
-<!-- endbuild -->
-	
-	<link rel="icon" type="image/png" href="/favicon.png" />
-<link rel="apple-touch-icon-precomposed" href="/apple-touch-favicon.png"/>
-</head>
-	
 
-<body>
+		<!-- build:css styles/main.css -->
+		<link
+			href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"
+			rel="stylesheet"
+		/>
 
- <div ui-view="header"></div> 
- <div ui-view="navigation"></div> 
-    <div ui-view="content"></div>
-    <!-- <div ui-view="footer"></div> -->
+		<link
+			href="bower_components/font-awesome/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
 
- 
+		<link href="styles/mystyles.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Josefin+Sans|Encode+Sans+Expanded"
+			rel="stylesheet"
+		/>
+		<!-- endbuild -->
 
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link
+			rel="apple-touch-icon-precomposed"
+			href="/apple-touch-favicon.png"
+		/>
+	</head>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	
-	<!-- Angular -->
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers.js"></script>
-	
-</body>
+	<body>
+		<div ui-view="header"></div>
+		<div ui-view="navigation"></div>
+		<div ui-view="content"></div>
+		<!-- <div ui-view="footer"></div> -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- Angular -->
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers.js"></script>
+	</body>
 </html>
-
